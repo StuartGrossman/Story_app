@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Stroy text:</strong>
+  <%= @story.stroy_text %>
+</p>
+
+<p>
+  <strong>Story title:</strong>
+  <%= @story.story_title %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @story.user_id %>
+</p>
+
+<p>
+  <strong>Gps latitude:</strong>
+  <%= @story.gps_latitude %>
+</p>
+
+<p>
+  <strong>Gps longitude:</strong>
+  <%= @story.gps_longitude %>
+</p>
+
+<%= link_to 'Edit', edit_story_path(@story) %> |
+<%= link_to 'Back', stories_path %>

@@ -1,0 +1,35 @@
+<h1>Listing stories</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Stroy text</th>
+      <th>Story title</th>
+      <th>User</th>
+      <th>Gps latitude</th>
+      <th>Gps longitude</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @stories.each do |story| %>
+      <tr>
+        <td><%= story.stroy_text %></td>
+        <td><%= story.story_title %></td>
+        <td><%= story.user_id %></td>
+        <td><%= story.gps_latitude %></td>
+        <td><%= story.gps_longitude %></td>
+        <td><%= link_to 'Show', story %></td>
+        <td><%= link_to 'Edit', edit_story_path(story) %></td>
+        <td><%= link_to 'Destroy', story, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Story', new_story_path %>

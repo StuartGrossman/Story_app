@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  stroy_text: MyText
+  story_title: MyString
+  user_id: 1
+  gps_latitude: 
+  gps_longitude: 
+
+two:
+  stroy_text: MyText
+  story_title: MyString
+  user_id: 1
+  gps_latitude: 
+  gps_longitude: 
