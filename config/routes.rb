@@ -1,24 +1,13 @@
 Stori::Application.routes.draw do
-  resources :comments
+  resources :comments, :users, :stories
 
-  resources :stories
 
-  # The priority is based upon order of creation: first created -> highest priority.
-  # See how all your routes lay out with "rake routes".
+root 'stories#index'
+get '/signup', to: 'users#new'
+delete '/signout', to: 'sessions#destroy'
+get'/signin', to: 'sessions#new'
 
-  # You can have the root of your site routed with "root"
- root 'stories#index'
 
-  # Example of regular route:
-  #   get 'products/:id' => 'catalog#view'
-
-  # Example of named route that can be invoked with purchase_url(id: product.id)
-  #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase
-
-  # Example resource route (maps HTTP verbs to controller actions automatically):
-  resources :users
-  resources :comments
-  resources :stories
 
 #    Prefix Verb   URI Pattern                  Controller#Action
 #     comments GET    /comments(.:format)          comments#index
