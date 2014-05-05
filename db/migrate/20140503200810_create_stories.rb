@@ -4,8 +4,8 @@ class CreateStories < ActiveRecord::Migration
       t.text :stroy_text
       t.string :story_title
       t.integer :user_id
-      t.float :gps_latitude
-      t.float :gps_longitude
+      t.float :latitude
+      t.float :longitude
 
       t.timestamps
     end

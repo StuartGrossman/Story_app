@@ -18,7 +18,7 @@ class StoriesControllerTest < ActionController::TestCase
 
   test "should create story" do
     assert_difference('Story.count') do
-      post :create, story: { gps_latitude: @story.gps_latitude, gps_longitude: @story.gps_longitude, story_title: @story.story_title, stroy_text: @story.stroy_text, user_id: @story.user_id }
+      post :create, story: { latitude: @story.latitude, longitude: @story.longitude, story_title: @story.story_title, stroy_text: @story.stroy_text, user_id: @story.user_id }
     end
 
     assert_redirected_to story_path(assigns(:story))
@@ -35,7 +35,7 @@ class StoriesControllerTest < ActionController::TestCase
   end
 
   test "should update story" do
-    patch :update, id: @story, story: { gps_latitude: @story.gps_latitude, gps_longitude: @story.gps_longitude, story_title: @story.story_title, stroy_text: @story.stroy_text, user_id: @story.user_id }
+    patch :update, id: @story, story: { latitude: @story.latitude, longitude: @story.longitude, story_title: @story.story_title, stroy_text: @story.stroy_text, user_id: @story.user_id }
     assert_redirected_to story_path(assigns(:story))
   end
 

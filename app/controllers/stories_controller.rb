@@ -69,6 +69,6 @@ class StoriesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def story_params
-      params.require(:story).permit(:stroy_text, :story_title, :user_id, :gps_latitude, :gps_longitude)
+      params.require(:story).permit(:stroy_text, :story_title, :user_id, :latitude, :longitude)
     end
 end

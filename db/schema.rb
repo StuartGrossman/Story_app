@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140503202113) do
+ActiveRecord::Schema.define(version: 20140503204435) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -28,10 +28,10 @@ ActiveRecord::Schema.define(version: 20140503202113) do
     t.text     "stroy_text"
     t.string   "story_title"
     t.integer  "user_id"
-    t.float    "gps_latitude"
-    t.float    "gps_longitude"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.float    "latitude"
+    t.float    "longitude"
   end
 
   create_table "users", force: true do |t|
