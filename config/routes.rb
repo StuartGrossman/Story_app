@@ -2,7 +2,7 @@ Stori::Application.routes.draw do
   resources :comments, :users, :stories
 
 
-root 'stories#index'
+root 'users#index'
 get '/signup', to: 'users#new'
 delete '/signout', to: 'sessions#destroy'
 get'/signin', to: 'sessions#new'

@@ -9,4 +9,4 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-Stori::Application.config.secret_key_base = 'a04c375e1af3f6bb6e6abbdae7f82fdbe062814194b7751f2411efc4abccf3d7fb13bac55db3013922d100db8c16ff793308ed272fcbf4401672c228492c0143'
+Stori::Application.config.secret_key_base = ENV['SECRET_KEY_BASE']

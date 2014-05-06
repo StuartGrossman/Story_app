@@ -4,7 +4,7 @@ gem 'rails', '4.0.4'
 
 gem 'pg'
 gem 'bootstrap-sass', '~> 3.0.3.0'
-gem "geocoder"
+gem 'geocoder'
 gem 'bcrypt-ruby'
 gem 'sass-rails', '~> 4.0.2'
 
